@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>EL ESPACIO</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<canvas id="starfield"></canvas>
+
+<header class="site-header">
+    <nav class="main-nav menu-pdf">
+        <a onclick="mostrarSeccion('inicio')" class="active">INICIO</a>
+        <a onclick="mostrarSeccion('marte')">MARTE</a>
+        <a onclick="mostrarSeccion('venus')">VENUS</a>
+        <a onclick="mostrarSeccion('jupiter')">JÚPITER</a>
+        <a onclick="mostrarSeccion('sol')">SOL</a>
+    </nav>
+</header>
+
+<!-- ======================= INICIO ========================== -->
+<section id="inicio" class="page" style="display:block;">
+    <div style="width:600px; height:80px; background:white; margin:200px auto 20px; border-radius:12px;"></div>
+    <div style="width:800px; height:40px; background:white; margin:0 auto; border-radius:8px; opacity:0.8;"></div>
+</section>
+
+<!-- ======================= MARTE ========================== -->
+<section id="marte" class="page" style="display:none; position:relative; min-height:2000px;">
+    <div style="position:absolute; top:120px; left:120px; width:400px; height:100px; background:white; border-radius:12px;"></div>
+
+    <!-- Imagen principal -->
+    <div style="position:absolute; top:80px; left:900px; width:550px; height:350px; background:white; border-radius:12px;"></div>
+
+    <!-- Textos bajo imagen -->
+    <div style="position:absolute; top:450px; left:900px; width:260px; height:100px; background:white; border-radius:8px;"></div>
+    <div style="position:absolute; top:450px; left:1190px; width:260px; height:100px; background:white; border-radius:8px;"></div>
+
+    <div style="position:absolute; top:650px; left:120px; width:500px; height:60px; background:white; border-radius:8px;"></div>
+    <div style="position:absolute; top:720px; left:900px; width:260px; height:80px; background:white; border-radius:8px;"></div>
+    <div style="position:absolute; top:720px; left:1190px; width:260px; height:260px; background:white; border-radius:12px;"></div>
+
+    <div class="franja-amarilla"></div>
+
+    <div style="position:absolute; top:1100px; left:120px; width:400px; height:60px; background:white; border-radius:8px;"></div>
+
+    <!-- 4 imágenes clicables -->
+    <div id="link-3" style="position:absolute; top:1170px; left:120px; width:280px; height:260px; background:white; border-radius:12px;"></div>
+    <div id="link-4" style="position:absolute; top:1170px; left:460px; width:280px; height:260px; background:white; border-radius:12px;"></div>
+    <div id="link-5" style="position:absolute; top:1170px; left:800px; width:280px; height:260px; background:white; border-radius:12px;"></div>
+    <div id="link-6" style="position:absolute; top:1170px; left:1170px; width:280px; height:260px; background:white; border-radius:12px;"></div>
+
+    <!-- Textos bajo las 4 cajas -->
+    <div style="position:absolute; top:1440px; left:120px; width:260px; height:40px; background:white; border-radius:8px;"></div>
+    <div style="position:absolute; top:1440px; left:460px; width:260px; height:40px; background:white; border-radius:8px;"></div>
+    <div style="position:absolute; top:1440px; left:800px; width:260px; height:40px; background:white; border-radius:8px;"></div>
+    <div style="position:absolute; top:1440px; left:1170px; width:260px; height:40px; background:white; border-radius:8px;"></div>
+
+    <div class="linea"></div>
+    <div class="numeros">
+        <div style="width:180px; height:80px; background:white; border-radius:8px;"></div>
+        <div style="width:180px; height:80px; background:white; border-radius:8px;"></div>
+        <div style="width:180px; height:80px; background:white; border-radius:8px;"></div>
+        <div style="width:180px; height:80px; background:white; border-radius:8px;"></div>
+    </div>
+    <div class="linea-2"></div>
+
+    <!-- Footer completamente en blanco -->
+    <div style="position:absolute; top:1900px; left:120px; width:280px; height:80px; background:white; border-radius:12px;"></div>
+    <div style="position:absolute; top:1900px; left:1250px; width:400px; height:300px; background:white; border-radius:12px; opacity:0.9;"></div>
+    <div style="position:absolute; top:1900px; left:1450px; width:300px; height:200px; background:white; border-radius:12px; opacity:0.9;"></div>
+</section>
+
+<!-- ======================= VENUS =========================== -->
+<section id="venus" class="page" style="position:relative; min-height:2000px;">
+    <div style="display:flex; gap:40px; padding:20px;">
+        <div style="width:45%;">
+            <div style="width:100%; height:100px; background:white; border-radius:12px; margin-bottom:20px;"></div>
+            <div style="width:100%; height:250px; background:white; border-radius:12px;"></div>
+        </div>
+        <div style="width:55%;">
+            <div style="width:100%; height:450px; background:white; border-radius:12px;"></div>
+        </div>
+    </div>
+
+    <div style="background:var(--accent-strong); padding:20px; margin:35px 0; border-radius:8px;">
+        <div style="width:100%; height:30px; background:white; border-radius:8px;"></div>
+    </div>
+
+    <div style="width:100%; height:380px; background:white; border-radius:12px; margin-top:25px;"></div>
+
+    <div style="width:500px; height:60px; background:white; border-radius:12px; margin:40px 0 20px;"></div>
+
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:15px;">
+        <div><div style="height:220px; background:white; border-radius:12px;"></div><div style="height:40px; background:white; border-radius:8px; margin-top:8px;"></div></div>
+        <div><div style="height:220px; background:white; border-radius:12px;"></div><div style="height:40px; background:white; border-radius:8px; margin-top:8px;"></div></div>
+        <div><div style="height:220px; background:white; border-radius:12px;"></div><div style="height:40px; background:white; border-radius:8px; margin-top:8px;"></div></div>
+    </div>
+
+    <!-- Footer Venus en blanco -->
+    <div style="position:absolute; top:1700px; left:120px; width:280px; height:80px; background:white; border-radius:12px;"></div>
+    <div style="position:absolute; top:1700px; left:1250px; width:400px; height:300px; background:white; border-radius:12px; opacity:0.9;"></div>
+</section>
+
+<!-- ======================= JÚPITER =========================== -->
+<section id="jupiter" class="page" style="position:relative; min-height:2200px;">
+    <div style="width:600px; height:100px; background:white; border-radius:12px; margin:60px 50px;"></div>
+
+    <div style="width:90%; height:200px; background:white; border-radius:12px; margin:40px 50px;"></div>
+
+    <div style="position:absolute; top:50px; left:50px; width:550px; height:100px; background:white; border-radius:12px;"></div>
+    <div style="position:absolute; top:0px; left:850px; width:550px; height:300px; background:white; border-radius:12px;"></div>
+    <div style="position:absolute; top:310px; left:850px; width:225px; height:110px; background:white; border-radius:12px;"></div>
+    <div style="position:absolute; top:310px; left:1110px; width:255px; height:110px; background:white; border-radius:12px;"></div>
+
+    <div style="position:relative; margin-top:500px;">
+        <div style="width:400px; height:50px; background:white; border-radius:8px; margin-bottom:20px;"></div>
+        <div style="position:absolute; top:80px; left:0px; width:300px; height:300px; background:white; border-radius:12px;"></div>
+        <div style="position:absolute; top:80px; left:400px; width:300px; height:300px; background:white; border-radius:12px;"></div>
+        <div style="position:absolute; top:80px; left:800px; width:300px; height:300px; background:white; border-radius:12px;"></div>
+        <div style="position:absolute; top:80px; left:1200px; width:300px; height:300px; background:white; border-radius:12px;"></div>
+    </div>
+
+    <div style="position:relative; margin-top:600px;">
+        <div style="position:absolute; top:0px; left:0px; width:450px; height:270px; background:white; border-radius:12px;"></div>
+        <div style="position:absolute; top:0px; left:540px; width:409px; height:270px; background:white; border-radius:12px;"></div>
+        <div style="position:absolute; top:0px; left:1050px; width:450px; height:270px; background:white; border-radius:12px;"></div>
+    </div>
+
+    <!-- Botones se mantienen (solo para navegación) -->
+    <div style="position:absolute; top:900px; left:170px;"><button style="padding:15px 30px; font-size:18px;"><b></b></button></div>
+    <div style="position:absolute; top:900px; left:680px;"><button style="padding:15px 30px; font-size:18px;"><b></b></button></div>
+    <div style="position:absolute; top:900px; left:1240px;"><button style="padding:15px 30px; font-size:18px;"><b></b></button></div>
+</section>
+
+<!-- ======================= SOL =========================== -->
+<section id="sol" class="page">
+    <div class="hero">
+        <div style="width:100%; height:450px; background:white;"></div>
+    </div>
+
+    <section class="section">
+        <div style="width:500px; height:80px; background:white; border-radius:12px; margin:0 auto 20px;"></div>
+        <div style="width:700px; height:40px; background:white; border-radius:8px; margin:0 auto;"></div>
+        <div style="width:200px; height:50px; background:white; border-radius:8px; margin:30px auto;"></div>
+    </section>
+
+    <section class="section docolumnas">
+        <div><div style="height:120px; background:white; border-radius:12px;"></div></div>
+        <div><div style="height:120px; background:white; border-radius:12px;"></div></div>
+    </section>
+
+    <section class="section">
+        <div style="width:500px; height:80px; background:white; border-radius:12px; margin-bottom:20px;"></div>
+        <div style="width:800px; height:300px; background:white; border-radius:12px;"></div>
+    </section>
+
+    <section class="section">
+        <div style="width:500px; height:80px; background:white; border-radius:12px; margin-bottom:30px;"></div>
+        <div class="grid-personas">
+            <div class="persona"><div style="height:280px; background:white; border-radius:12px;"></div><div style="height:40px; background:white; border-radius:8px; margin-top:10px;"></div></div>
+            <div class="persona"><div style="height:280px; background:white; border-radius:12px;"></div><div style="height:40px; background:white; border-radius:8px; margin-top:10px;"></div></div>
+            <div class="persona"><div style="height:280px; background:white; border-radius:12px;"></div><div style="height:40px; background:white; border-radius:8px; margin-top:10px;"></div></div>
+            <div class="persona"><div style="height:280px; background:white; border-radius:12px;"></div><div style="height:40px; background:white; border-radius:8px; margin-top:10px;"></div></div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div style="width:500px; height:80px; background:white; border-radius:12px; margin-bottom:30px;"></div>
+        <div class="dos-columnas">
+            <div><div style="height:200px; background:white; border-radius:12px; margin-bottom:20px;"></div></div>
+            <div><div style="height:200px; background:white; border-radius:12px; margin-bottom:20px;"></div></div>
+        </div>
+    </section>
+
+    <footer style="height:200px; background:var(--bg-panel); display:flex; justify-content:flex-end; gap:60px; padding:40px;">
+        <div style="width:200px; height:150px; background:white; border-radius:12px;"></div>
+        <div style="width:200px; height:150px; background:white; border-radius:12px;"></div>
+        <div style="width:200px; height:150px; background:white; border-radius:12px;"></div>
+    </footer>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
